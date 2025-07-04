@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishow Garments World</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/IshowLogo.png" type="image/png">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Images/IshowLogo.png" alt="ISHOW Logo">
+        <span>ISHOW <br> Garments World</span>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <div class="bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <span class="arrow">&lt;</span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <b><h1>Welcome to ISHOW Garments World</h1></b>
+      <i><p>Where Elegance Meets the World.</p></i>
+    </section>
+
+    <section class="hero">
+        <h1>Tailored To Perfection For Him/Her</h1>
+        <p>From timeless traditional wear to modern luxury,<br> we tailor each piece with purpose and precision.<br> For every big day-or-everyday-we stitch your story into style,<br> one perfect fit at a time.</p>
+        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">📅Book Now</button>
+    </section>
+
+    <section class="about" id="about">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p><strong>ISHOW Garments World</strong> a fashion brand where elegance meets craftmanship. Founded with a passion for tailoring and excellence, we speciallize in bespoke garments tailored to fit your unique style.</p>
+          <p>With years of experience and an eye for detail, we blend tradition with modern fashion, offering high-quality clothing that speaks class and confidence.</p>
+          <p>From everyday wear to special events, we stitch dream to reality.</p>
+        </div>
+        <div class="about-image">
+          <img src="Images/Tailor in action2.jpg" alt="Tailor in action">
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="services" id="services">
+     <div class="services-content">
+       <h2>Our Services</h2>
+       <div class="service-boxes">
+         <div class="service-card">
+           <img src="Images/Men's Wear.jpg" alt="Men's Fashion">
+           <h3>Men's Bespoke</h3>
+           <p>Tailored suits and native styles crafted to perfection for every occasion.</p>
+         </div>
+         <div class="service-card">
+           <img src="Images/Women's Wear.jpg" alt="Women's Fashion">
+           <h3>Women's Fashion</h3>
+           <p>Elegant dresses, two-pieces, and custom-fit outfits made with flair and finesse.</p>
+         </div>
+         <div class="service-card">
+           <img src="Images/Children's Wear.jpg" alt="Kids Fashion">
+           <h3>Kids Collection</h3>
+           <p>Adorable and trendy wears tailored to keep your little ones shining bright.</p>
+         </div>
+       </div>
+     </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you — whether it's to book a fitting or make inquiries.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p><strong>Phone:</strong> +234 803 716 2364, +234 708 663 0193</p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/2349025000264" target="_blank">Chat with us</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/ishowgarmentsworld" target="_blank">@ishowgarmentsworld</a></p>
+            <p><strong>Email:</strong> ishowgarmentsworld@yahoo.com</p>
+            <p><strong>Address:</strong> 2 Census Close, Off Babs-Animashaun, Surulere, Lagos, NG</p>
+          </div>
+
+          <form action="https://formsubmit.co/ishowgarmentsworld@yahoo.com" method="POST" class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://nicowillyx.github.io/thank-you.html">
+
+            <button type="submit">Send Message</button>
+            <p class="success-message" id="successMessage">Thanks! We’ll be in touch shortly.</p>
+          </form>
+        </div>
+        <div class="map-container">
+          <iframe
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.2544233727913!2d3.3491507999999994!3d6.489433099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c0f7cfb3d97%3A0x5c46b3afe7aeae7d!2s2%20Census%20Cl%2C%20Surulere%2C%20Lagos%20101241%2C%20Lagos!5e0!3m2!1sen!2sng!4v1751066648302!5m2!1sen!2sng"
+           width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+           referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="Images/IshowLogo.png" alt="ISHOW Logo">
+        <h3>ISHOW Garments World</h3>
+        <p>Where Elegance Meets the World.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>📞 +234 803 716 2364, +234 708 663 0193</p>
+        <p>📧 ishowgarmentsworld@yahoo.com</p>
+        <div class="social-icons">
+          <a href="https://wa.me/2349025000264" title="WhatsApp"><img src="Images/whatsapp icon.png" alt="WhatsApp"></a>
+          <a href="https://www.instagram.com/ishowgarmentsworld" title="Instagram"><img src="Images/Instagram icon.jpg" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    
+  <div class="footer-bottom">
+    <p>© 2025 ISHOW Garments World. All Rights Reserved.</p>
+  </div>
+  </footer>
+
+  <button id="backToTop" title="Go to top">↑</button>
+
+  <script>
+  const backToTop = document.getElementById("backToTop");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+
+  backToTop.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("show");
+  });
+</script>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const message = document.getElementById('successMessage');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form)
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset();
+        message.style.display = 'block';
+        setTimeout(() => {
+          message.style.display = 'none';
+        }, 4000);
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    })
+    .catch(error => {
+      alert('Error: ' + error.message);
+    });
+  });
+</script>
+
+</body>
+</html>
