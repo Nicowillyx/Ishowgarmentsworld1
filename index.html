@@ -99,7 +99,7 @@
             <p><strong>Address:</strong> 2 Census Close, Off Babs-Animashaun, Surulere, Lagos, NG</p>
           </div>
 
-          <form action="https://formsubmit.co/ajibolawilliams16@gmail.com" method="POST" class="contact-form" id="contactForm">
+          <form action="https://formsubmit.co/ishowgarmentsworld@yahoo.com" method="POST" class="contact-form" id="contactForm">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
@@ -173,7 +173,7 @@
   });
 </script>
 
-<script>
+<script> 
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.getElementById("navLinks");
 
@@ -186,29 +186,6 @@
 <script>
   const form = document.getElementById('contactForm');
   const message = document.getElementById('successMessage');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    fetch(form.action, {
-      method: "POST",
-      body: new FormData(form)
-    })
-    .then(response => {
-      if (response.ok) {
-        form.reset();
-        message.style.display = 'block';
-        setTimeout(() => {
-          message.style.display = 'none';
-        }, 4000);
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    })
-    .catch(error => {
-      alert('Error: ' + error.message);
-    });
-  });
 </script>
 
 </body>
