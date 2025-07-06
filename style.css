@@ -531,5 +531,6 @@ p {
   .hero p {
     font-size: 1rem;
     padding: 0 15px;
+    background: linear-gradient(to right, #4b364a, #4b364a, #5839ef, #5839ef, #4b364a, #4b364a);
   }
 }
