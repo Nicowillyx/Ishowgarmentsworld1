@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishow Garments World</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="icon" href="Images/IshowLogo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishow Garments World</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Images/IshowLogo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav class="navbar">
+      <div class="nav-overlay" onclick="closeMenu()"></div>
       <div class="logo">
-        <img src="Images/IshowLogo.png" alt="ISHOW Logo">
+        <img src="Images/IshowLogo.png" alt="ISHOW Garments World logo">
         <span>ISHOW <br> Garments World</span>
       </div>
       <div class="hamburger" id="hamburger">
@@ -28,6 +29,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -35,53 +37,98 @@
 
   <main>
     <section id="home">
-      <b><h1>Welcome to ISHOW Garments World</h1></b>
-      <i><p>Where Elegance Meets the World.</p></i>
+      <h1>Welcome to ISHOW Garments World</h1>
+      <p class="tagline">Where Elegance Meets the World.</p>
     </section>
 
     <section class="hero">
-        <h1>Tailored To Perfection For Him/Her</h1>
-        <p>From timeless traditional wear to modern luxury,<br> we tailor each piece with purpose and precision.<br> For every big day-or-everyday-we stitch your story into style,<br> one perfect fit at a time.</p>
-        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">📅Book Now</button>
+      <h1>Tailored To Perfection For Him/Her</h1>
+      <p>From timeless traditional wear to modern luxury,<br> we tailor each piece with purpose and precision.<br> For every big day-or-everyday-we stitch your story into style,<br> one perfect fit at a time.</p>
+      <button onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });">🧵 Explore Styles</button>
     </section>
 
     <section class="about" id="about">
-    <div class="about-content">
-      <h2>About Us</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p><strong>ISHOW Garments World</strong> a fashion brand where elegance meets craftmanship. Founded with a passion for tailoring and excellence, we speciallize in bespoke garments tailored to fit your unique style.</p>
-          <p>With years of experience and an eye for detail, we blend tradition with modern fashion, offering high-quality clothing that speaks class and confidence.</p>
-          <p>From everyday wear to special events, we stitch dream to reality.</p>
-        </div>
-        <div class="about-image">
-          <img src="Images/Tailor in action2.jpg" alt="Tailor in action">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p><strong>ISHOW Garments World</strong> is a fashion brand where elegance meets craftsmanship. Founded with a passion for tailoring and excellence, we specialize in bespoke garments tailored to fit your unique style.</p>
+            <p>With years of experience and an eye for detail, we blend tradition with modern fashion, offering high-quality clothing that speaks class and confidence.</p>
+            <p>From everyday wear to special events, we stitch dreams to reality.</p>
+          </div>
+          <div class="about-image">
+            <img src="Images/tailor.jpg" alt="Tailor in action">
+          </div>
         </div>
       </div>
-    </div>
     </section>
 
     <section class="services" id="services">
-     <div class="services-content">
-       <h2>Our Services</h2>
-       <div class="service-boxes">
-         <div class="service-card">
-           <img src="Images/Men's Wear.jpg" alt="Men's Fashion">
-           <h3>Men's Bespoke</h3>
-           <p>Tailored suits and native styles crafted to perfection for every occasion.</p>
-         </div>
-         <div class="service-card">
-           <img src="Images/Women's Wear.jpg" alt="Women's Fashion">
-           <h3>Women's Fashion</h3>
-           <p>Elegant dresses, two-pieces, and custom-fit outfits made with flair and finesse.</p>
-         </div>
-         <div class="service-card">
-           <img src="Images/Children's Wear.jpg" alt="Kids Fashion">
-           <h3>Kids Collection</h3>
-           <p>Adorable and trendy wears tailored to keep your little ones shining bright.</p>
-         </div>
-       </div>
-     </div>
+      <div class="services-content">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-box">
+            <h3>Bespoke Tailoring</h3>
+            <p>Custom-fitted outfits designed for men, women, and children — sewn to match your unique style.</p>
+          </div>
+          <div class="service-box">
+            <h3>Traditional & Modern Wear</h3>
+            <p>From agbadas and gowns to senators and smart casuals, we blend culture with elegance.</p>
+          </div>
+          <div class="service-box">
+            <h3>Alterations & Adjustments</h3>
+            <p>We reshape, resize, or restyle garments to fit you perfectly — like it was made just for you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="portfolio-preview" id="portfolio">
+      <div class="portfolio-content">
+        <h2>Our Work Speaks Elegance</h2>
+        <p class="portfolio-tagline">Explore a gallery of styles stitched to perfection for every taste and occasion.</p>
+    
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <img src="Images/portfolio1.jpg" alt="Agbada design">
+            <p>Classic Agbada Elegance</p>
+          </div>
+          <div class="portfolio-card">
+            <img src="Images/portfolio2.jpg" alt="Bridal dress">
+            <p>Timeless Bridal Craft</p>
+          </div>
+          <div class="portfolio-card">
+            <img src="Images/portfolio3.jpg" alt="Men’s senator wear">
+            <p>Bold Senator Style</p>
+          </div>
+          <div class="portfolio-card">
+            <img src="Images/portfolio2.jpg" alt="Bridal dress">
+            <p>Timeless Bridal Craft</p>
+          </div>
+        </div>
+
+        <a href="portfolio.html" class="see-more-btn">See Full Portfolio</a>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-content">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-box">
+            <p>"The outfit was PERFECT! Got so many compliments. Will definitely be coming back!"</p>
+            <h4>– Amaka O.</h4>
+          </div>
+          <div class="testimonial-box">
+            <p>"Professional service and beautiful craftsmanship. My native wear was flawless."</p>
+            <h4>– Chinedu I.</h4>
+          </div>
+          <div class="testimonial-box">
+            <p>"Every stitch told a story. ISHOW Garments brought my design to life."</p>
+            <h4>– Zainab K.</h4>
+          </div>
+        </div>
+      </div>
     </section>
 
 
@@ -111,6 +158,7 @@
             <p class="success-message" id="successMessage">Thanks! We’ll be in touch shortly.</p>
           </form>
         </div>
+        
         <div class="map-container">
           <iframe
            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.2544233727913!2d3.3491507999999994!3d6.489433099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c0f7cfb3d97%3A0x5c46b3afe7aeae7d!2s2%20Census%20Cl%2C%20Surulere%2C%20Lagos%20101241%2C%20Lagos!5e0!3m2!1sen!2sng!4v1751066648302!5m2!1sen!2sng"
@@ -123,36 +171,13 @@
   </main>
   <footer class="footer">
     <div class="footer-content">
-      <div class="footer-brand">
-        <img src="Images/IshowLogo.png" alt="ISHOW Logo">
-        <h3>ISHOW Garments World</h3>
-        <p>Where Elegance Meets the World.</p>
-      </div>
-
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-contact">
-        <h4>Contact Us</h4>
-        <p>📞 +234 803 716 2364, +234 708 663 0193</p>
-        <p>📧 ishowgarmentsworld@yahoo.com</p>
-        <div class="social-icons">
-          <a href="https://wa.me/2349025000264" title="WhatsApp"><img src="Images/whatsapp icon.png" alt="WhatsApp"></a>
-          <a href="https://www.instagram.com/ishowgarmentsworld" title="Instagram"><img src="Images/Instagram icon.jpg" alt="Instagram"></a>
-        </div>
-      </div>
+      <h2>Let’s Create Elegance Together</h2>
+      <p>Ready to upgrade your wardrobe with perfectly tailored garments?</p>
+      <a href="#contact" class="cta-footer-btn">Get in Touch</a>
     </div>
-    
-  <div class="footer-bottom">
-    <p>© 2025 ISHOW Garments World. All Rights Reserved.</p>
-  </div>
+    <p class="copyright">
+      &copy; 2025 ISHOW Garments World. All rights reserved.
+    </p>
   </footer>
 
   <button id="backToTop" title="Go to top">↑</button>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Portfolio – ISHOW Garments World</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="nav-overlay" onclick="closeMenu()"></div>
+    <div class="logo">
+      <img src="Images/IshowLogo.png" alt="ISHOW Garments World logo">
+      <span>ISHOW <br> Garments World</span>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <div class="bars">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <span class="arrow">&lt;</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main style="padding-top: 80px;">
+    <section class="portfolio-full">
+      <h1>Our Portfolio</h1>
+      <p class="portfolio-tagline">Browse by style category</p>
+
+      <input type="text" id="searchInput" placeholder="Search styles..." />
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="men">Men</button>
+        <button class="filter-btn" data-filter="women">Women</button>
+        <button class="filter-btn" data-filter="kids">Kids</button>
+        <button class="filter-btn" data-filter="couple">Couple</button>
+      </div>
+
+      <div class="portfolio-gallery">
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/portfolio.jpg" alt="Bridal wear">
+          <p>Bridal Elegance</p>
+        </div>
+
+        <div class="portfolio-item" data-category="men">
+          <img src="Images/portfolio3.jpg" alt="Senator outfit">
+          <p>Classic Senator</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Blue royalty.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Blue Royalty</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Yellow beaded lace.mp4" type="video/mp4">
+          </video>
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Army green lace 1.jpg" alt="Asoebi front">
+          <p> ...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Army green lace .jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="kids">
+          <img src="Images/portfolio4.jpg" alt="Chic kidswear">
+          <p>Chic Kidswear</p>
+        </div>
+
+        <div class="portfolio-item" data-category="couple">
+          <img src="Images/portfolio6.jpg" alt="Couple outfit">
+          <p>Coordinated Couple</p>
+        </div>
+
+        <div class="portfolio-item" data-category="men">
+          <img src="Images/portfolio1.jpg" alt="Agbada style">
+          <p>Royal Agbada</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Black .jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Black luxury skirt and blouse.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Blue and black damask.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Blue ankara 1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Yellow gown.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Cream damask straight gown one off shoulder.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Dress.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Cream lace with yellow dots.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Cream lace with yellow dots 2.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Cream lace with yellow dots 1.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Halter neck flair gown.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Lace with mikado .jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="......." alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Lemon shirt and beaded asooke shorts.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Orange top.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Lemon shirt with beaded asooke shorts.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Liquid boubou silk.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Liquid boubou silk 1.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Mother and daughter duo.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Orange beaded lace.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Orange beaded lace 1.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Pink cord gown .jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Pink cord gown 1 .jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+        
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Sand brown.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Yellow dress.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Royal blue ankara gown with front slit.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Royal blue ankara skirt and beaded blouse.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Royal blue ankara skirt and beaded blouse 1.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Sand brown lace with chantilly bodice.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Sand brown lace.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Yellow lace flair gown.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/Yellow lace flair gown 1.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/White lace.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/White lace 1.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <img src="Images/White blouse and wrapper with black inner.jpg" alt="Asoebi front">
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Black gown.mp4">
+          </video>
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Black luxury 1.mp4">
+          </video>
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Black luxury.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Blue ankara.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>...</p>
+        </div>
+
+        <div class="portfolio-item" data-category="women">
+          <video controls width="100%">
+            <source src="Videos/Georgeous mint.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Lace Queen</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close-lightbox">&times;</span>
+      <img id="lightbox-img" src="" alt="Large view">
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Inspired to Sew Your Story?</h2>
+      <p>Let’s bring your next outfit to life</p>
+      <a href="index.html#contact" class="cta-footer-btn">Contact Us</a>
+    </div>
+    <p class="copyright">
+      &copy; 2025 ISHOW Garments World. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- 🟡 Navigation JS -->
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("show");
+      document.querySelector(".nav-overlay").classList.toggle("show");
+    }
+
+    function closeMenu() {
+      document.querySelector(".nav-links").classList.remove("show");
+      document.querySelector(".nav-overlay").classList.remove("show");
+    }
+  </script>
+
+  <!-- 🟡 Filtering + Search -->
+  <script>
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelector(".filter-btn.active").classList.remove("active");
+        btn.classList.add("active");
+
+        const filter = btn.getAttribute("data-filter");
+
+        portfolioItems.forEach(item => {
+          const category = item.getAttribute("data-category");
+          item.style.display = (filter === "all" || category === filter) ? "block" : "none";
+        });
+      });
+    });
+
+    const searchInput = document.getElementById("searchInput");
+    searchInput.addEventListener("input", () => {
+      const term = searchInput.value.toLowerCase();
+      portfolioItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(term) ? "block" : "none";
+      });
+    });
+  </script>
+
+  <!-- 🟡 Lightbox -->
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeLightbox = document.querySelector(".close-lightbox");
+
+    portfolioItems.forEach(item => {
+      const img = item.querySelector("img");
+      if (img) {
+        img.addEventListener("click", () => {
+          lightboxImg.src = img.src;
+          lightbox.style.display = "flex";
+        });
+      }
+    });
+
+    closeLightbox.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target === lightbox) lightbox.style.display = "none";
+    });
+  </script>
+
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("show");
+  });
+
+  // Close menu when clicking a link
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+      hamburger.classList.remove("active");
+    });
+  });
+</script>
+
+
+</body>
+</html>
