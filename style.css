@@ -435,6 +435,14 @@ p {
   margin-top: 30px;
 }
 
+.contact-content p,
+.contact-info p,
+.contact-info a,
+.contact-info strong {
+  color: #3b2e00; /* dark gold/brown tone for contrast */
+}
+
+
 .contact-info {
   flex: 1;
   min-width: 250px;
