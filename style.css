@@ -846,6 +846,7 @@ footer .copyright {
   .testimonial-grid {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
   }
 
   .contact-grid {
