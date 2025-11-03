@@ -352,91 +352,9 @@
     </p>
   </footer>
 
-  <!-- 🟡 Navigation JS -->
-  <script>
-    function toggleMenu() {
-      document.querySelector(".nav-links").classList.toggle("show");
-      document.querySelector(".nav-overlay").classList.toggle("show");
-    }
+  <button id="backToTop" title="Go to top">↑</button>
 
-    function closeMenu() {
-      document.querySelector(".nav-links").classList.remove("show");
-      document.querySelector(".nav-overlay").classList.remove("show");
-    }
-  </script>
-
-  <!-- 🟡 Filtering + Search -->
-  <script>
-    const filterButtons = document.querySelectorAll(".filter-btn");
-    const portfolioItems = document.querySelectorAll(".portfolio-item");
-
-    filterButtons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelector(".filter-btn.active").classList.remove("active");
-        btn.classList.add("active");
-
-        const filter = btn.getAttribute("data-filter");
-
-        portfolioItems.forEach(item => {
-          const category = item.getAttribute("data-category");
-          item.style.display = (filter === "all" || category === filter) ? "block" : "none";
-        });
-      });
-    });
-
-    const searchInput = document.getElementById("searchInput");
-    searchInput.addEventListener("input", () => {
-      const term = searchInput.value.toLowerCase();
-      portfolioItems.forEach(item => {
-        const text = item.textContent.toLowerCase();
-        item.style.display = text.includes(term) ? "block" : "none";
-      });
-    });
-  </script>
-
-  <!-- 🟡 Lightbox -->
-  <script>
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-    const closeLightbox = document.querySelector(".close-lightbox");
-
-    portfolioItems.forEach(item => {
-      const img = item.querySelector("img");
-      if (img) {
-        img.addEventListener("click", () => {
-          lightboxImg.src = img.src;
-          lightbox.style.display = "flex";
-        });
-      }
-    });
-
-    closeLightbox.addEventListener("click", () => {
-      lightbox.style.display = "none";
-    });
-
-    window.addEventListener("click", (e) => {
-      if (e.target === lightbox) lightbox.style.display = "none";
-    });
-  </script>
-
-  <script>
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("navLinks");
-
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navLinks.classList.toggle("show");
-  });
-
-  // Close menu when clicking a link
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("show");
-      hamburger.classList.remove("active");
-    });
-  });
-</script>
-
-
+  <script src="script.js"></script>
+  
 </body>
 </html>

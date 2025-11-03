@@ -182,36 +182,7 @@
 
   <button id="backToTop" title="Go to top">↑</button>
 
-  <script>
-  const backToTop = document.getElementById("backToTop");
-
-  window.onscroll = function () {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      backToTop.style.display = "block";
-    } else {
-      backToTop.style.display = "none";
-    }
-  };
-
-  backToTop.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
-
-<script> 
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("navLinks");
-
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navLinks.classList.toggle("show");
-  });
-</script>
-
-<script>
-  const form = document.getElementById('contactForm');
-  const message = document.getElementById('successMessage');
-</script>
-
-</body>
+  <script src="script.js"></script>
+  
+  </body>
 </html>
