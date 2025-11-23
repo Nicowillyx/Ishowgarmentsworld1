@@ -413,6 +413,20 @@ p {
   font-weight: 600;
 }
 
+.avg-box {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 250px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: darkgoldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact {
   padding: 60px 40px;
   background: linear-gradient(to top right, rgb(236, 227, 203), white, rgb(156, 136, 36));

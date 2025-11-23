@@ -116,3 +116,9 @@ const backToTop = document.getElementById("backToTop");
   backToTop.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
+
+  async function loadAverage() {
+  const res = await fetch("https://ishow-feedback-backend-1.onrender.com/api/average-rating");
+  const data = await res.json();
+  document.getElementById("avgRating").textContent = data.average;
+}
