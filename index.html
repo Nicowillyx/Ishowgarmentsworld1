@@ -184,6 +184,36 @@
   <button id="backToTop" title="Go to top">↑</button>
 
   <script src="script.js"></script>
-  
+
+  <script>
+    // Fetch average rating
+    fetch("https://ishow-feedback-backend-1.onrender.com/api/average-rating")
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("avgRating").textContent = data.average;
+    })
+    .catch(err => console.log("Error loading rating:", err));
+    
+    // Fetch random feedback
+    fetch("https://ishow-feedback-backend-1.onrender.com/api/random-feedback")
+    .then(res => res.json())
+    .then(data => {
+      const container = document.querySelector(".testimonial-grid");
+      
+      // Insert random feedback automatically
+      const newBox = document.createElement("div");
+      newBox.className = "testimonial-box";
+      newBox.innerHTML = `
+        <p>"${data.message}"</p>
+        <h4>– ${data.name}</h4>
+      `;
+
+      // insert before avg rating box
+      const avgBox = document.querySelector(".avg-box");
+      container.insertBefore(newBox, avgBox);
+      })
+      .catch(err => console.log("Error loading feedback:", err));
+  </script>
+
   </body>
 </html>
