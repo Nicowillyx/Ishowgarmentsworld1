@@ -184,46 +184,6 @@
   <button id="backToTop" title="Go to top">↑</button>
 
   <script src="script.js"></script>
-  <script>
-    async function loadTestimonials() {
-      const res = await fetch("https://ishow-feedback-backend-1.onrender.com/api/random-feedbacks?limit=3");
-      const data = await res.json();
-      
-      if (!data.ok) return;
-      
-      const box = document.getElementById("testimonials");
-      box.innerHTML = "";
-      
-      data.rows.forEach(fb => {
-        const name = fb.name ? fb.name : "Anonymous";
-        const stars = "⭐".repeat(fb.rating);
-        const image = fb.image_url ? `<img src="${fb.image_url}" class="fb-image">` : "";
-        
-        box.innerHTML += `
-        <div class="fb-card">
-          <div class="fb-stars">${stars}</div>
-          <p class="fb-message">${fb.message}</p>
-          <div class="fb-name">— ${name}</div>
-          ${image}
-        </div>
-        `;
-      });
-    }
-    
-    loadTestimonials();
-  </script>
-
-  <script>
-    async function loadAverage() {
-      const res = await fetch("https://ishow-feedback-backend-1.onrender.com/api/average-rating");
-      const data = await res.json();
-      document.getElementById("avgRating").textContent = data.average;
-    }
-</script>
-<script>
-  loadTestimonials();
-  loadAverage();
-</script>
-
+  
   </body>
 </html>
