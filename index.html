@@ -194,8 +194,8 @@
     })
     .catch(err => console.log("Error loading rating:", err));
     
-    // Fetch random feedback
-    fetch("https://ishow-feedback-backend-1.onrender.com/api/random-feedback")
+    // Fetch random feedbacks
+    fetch("https://ishow-feedback-backend-1.onrender.com/api/random-feedbacks")
     .then(res => res.json())
     .then(data => {
       const container = document.querySelector(".testimonial-grid");
